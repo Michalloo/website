@@ -1,0 +1,175 @@
+.top{
+    border: 0px solid #000
+
+  }
+  .header{
+    margin-left: 5px;
+    margin-top: 5px;
+
+  }
+  .student_photo{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+
+
+
+  }
+
+  .details {
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+
+  }
+.mat-card-content {
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+}
+
+.red_card {
+width: 150px;
+height: 20px;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+color:white;
+margin-top: 5px;
+
+}
+
+.green_card {
+    width: 150px;
+    height: 20px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    }
+  .amountOfSubmission {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+
+    display: block;
+  }
+  .example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSU-Xb3ze670Re_TCAdaCiveY6lcUIFPOcISA&usqp=CAU');
+    background-size: cover;
+  }
+
+.alignments{
+    margin-left: 5%;
+    margin-top: 2%;
+
+  }
+
+  .alignments label{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #active,
+    #submitted,
+    #pending{
+        margin-top: 55%;
+        font-size:120%;
+        font-style: bold;
+        color: #4f5350;
+    }
+    #active-value,
+    #submitted-value,
+    #pending-value{
+        margin-top: 35%;
+        font-size: 250%;
+        font-weight: 1000;
+        font-style: bold;
+        color: #6d746e;
+    }
+
+    .create-button {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .button{
+        padding-right: 5%;
+    }
+    .mat-raised-button.mat-success,
+    .mat-flat-button.mat-success,
+    .mat-fab.mat-success,
+    .mat-mini-fab.mat-success {
+      color: #f0fff3;
+      background-color: rgb(16, 197, 58);
+    }
+    .active-assign-content{
+        display: inline;
+    }
+    .active-assignments,
+    .expired-assignments{
+        margin-top: 2%;
+        padding-left: 2%;
+        font-size: 17px;
+        font-weight: 300;
+        border-color: #6d746e;
+        border-style: solid;
+        border-radius: 2%;
+        border-width: 1px;
+    }
+    .circle-pending {
+        text-align-last: center;
+        font-size: large;
+        margin-bottom: 2%;
+        margin-left: 18%;
+        display: inline-block;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(146, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+        top:0;
+        left:0;
+        pointer-events:none;
+      }
+      .circle-submitted {
+        text-align-last: center;
+        font-size: large;
+        margin-bottom: 2%;
+        margin-left: 18%;
+        display: inline-block;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(4, 236, 147);
+        background-color: rgba(0, 0, 0, 0);
+
+        top:0;
+        left:0;
+      }
+
+      .circle-active {
+        text-align-last: center;
+        font-size: large;
+        margin-bottom: 2%;
+        margin-left: 13%;
+        display: inline-block;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(219, 200, 22);
+        background-color: rgba(0, 0, 0, 0);
+        top:0;
+        left:0;
+      }
+
+      .info-controls{
+          margin-top: 5%;
+      }

@@ -1,0 +1,79 @@
+
+<mat-card class="top">
+    <div class = "header"><h1><b>Assignments</b></h1></div>
+    <mat-card-header>
+
+        <div mat-card-avatar class="example-header-image">
+
+        </div>
+            <mat-card-title>Introducion to Python</mat-card-title>
+        </mat-card-header>
+                
+                    <mat-card-content>
+                            <div class = "details">    
+                            Python is an open-source (free) programming language that is used in web programming, data science,
+                            artificial inteligence , and many scientific applications. Learning Python allows programmer to focus on solving problems 
+                            rather than focusing on syntax. <p></p>
+                                <h3><b>Assignments timeline</b> Start date: {{startDate}}  End date: {{endDate}}  </h3>  
+
+                            </div> 
+
+                            <div class="info">   
+                                <mat-card class = "green_card">
+                                <mat-card-content> <h2>{{submitted_value}}</h2>Assignments Submitted </mat-card-content>
+                                </mat-card>                            
+                        </div>  
+                        <mat-card class = "red_card">
+                            <mat-card-content> <h2>{{pending_value}}</h2>Assignments Pending </mat-card-content>
+                            </mat-card>   
+                    </mat-card-content>
+
+
+
+        
+
+
+
+
+
+    <mat-tab-group animationDuration="100ms">
+        <mat-tab label="Submitted">
+        <div class="active-assignments">
+            
+
+                <li *ngFor = "let student of students">
+                    
+                            <mat-card class="students_submitted">
+                            <mat-card-header>
+                                    <div mat-card-avatar class =student_photo></div>  
+                                    <mat-card-title><h2>{{student.name}}</h2></mat-card-title>
+                                    <mat-card-subtitle>Submitted on: {{student.dateOfUpload}}</mat-card-subtitle>
+                    
+                            </mat-card-header>
+                        </mat-card>
+                    
+                       
+                </li>
+
+        </div>
+        </mat-tab>
+    
+        <mat-tab label="Pending">
+        <div class="expired-assignments">
+                <li *ngFor = "let student of students">
+                    
+                            <mat-card class="students_submitted">
+                            <mat-card-header>
+                                    <div mat-card-avatar class =student_photo></div>  
+                                    <mat-card-title><h2>{{student.name}}</h2></mat-card-title>
+                                    
+                    
+                            </mat-card-header>
+                        </mat-card>
+                    
+                       
+                </li>
+    </div>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>

@@ -8,3 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'website';
 }
+export interface Student{
+
+  name: string;
+  taskUploaded:boolean;
+  photo:string;
+  dateOfUpload:string;
+
+}
